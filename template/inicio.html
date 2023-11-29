@@ -1,0 +1,219 @@
+{% include("cabecera.html") %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Web App</title>
+    <!-- BOOTSTRAP 4 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+
+  <header class="header">
+
+
+
+
+    <!-- Contiene el H1 el párrafo y el botón -->
+    <div class="header-content container">
+
+        <div class="header-txt">
+            <h1>RentHouse</h1>
+            <p>
+                RentHouse es una empresa inmobiliaria líder que se destaca por nuestro enfoque dedicado y orientado 
+                al cliente. Con una amplia experiencia en el mercado, ofrecemos servicios de alquiler y venta de
+                propiedades de forma profesional y personalizada. Nuestro compromiso con la satisfacción del cliente
+                se refleja en nuestra atención al detalle, amplio conocimiento del mercado inmobiliario y en nuestra 
+                capacidad para hacer que el proceso de encontrar un nuevo hogar sea fácil y sin complicaciones. Además,
+                nos distinguimos por nuestro enfoque transparente y nuestra capacidad para brindar soluciones
+                adaptadas a las necesidades individuales de cada cliente.
+            </p>
+            <a href="#" class="btn-1">Contratar servicio</a>
+        </div>
+
+    </div>
+</header>
+
+
+
+<!-- Nueva sección -->
+<section class="general container">
+
+
+    <h2>Servicios</h2>
+
+    <div class="general-content">
+
+        <div class="general-1 txt">
+            <h3>Renta</h3>
+            <p>
+                Destaca por ofrecer una amplia gama de opciones que incluyen casas,
+                apartamentos, locales comerciales y garajes.
+            </p>
+        </div>
+
+        <div class="general-2 txt">
+            <h3>Compra</h3>
+            <p>
+                Ayuda a los clientes a adquirir activos
+                 inmobiliarios que se alineen con sus objetivos e intereses comerciales.
+            </p>
+        </div>
+
+        <div class="general-3 txt">
+            <h3>Venta</h3>
+            <p>
+                Ayuda a los propietarios a vender sus activos de 
+                manera efectiva, ofreciendo una amplia gama de servicios.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="info-1">
+
+    <div class="info-content container">
+        <h2>Información de promedios mensuales</h2>
+        <div class="info-circle">
+
+            <div class="circle-txt">
+                <div class="circle-1">
+                    <h3>1200 €</h3>
+                </div>
+                <p>
+                    La TAE representa el coste real o efectivo de un préstamo o arrendamiento, incluyendo 
+                    tanto el tipo de interés nominal como los gastos y comisiones asociados. Cuanto menor
+                    sea la TAE, menores serán los costos asociados al arrendamiento.
+                </p>
+            </div>
+            <div class="circle-txt">
+                <div class="circle-1">
+                    <h3>10.6 %</h3>
+                </div>
+                <p>
+                    Ratio de endeudamiento: Esta métrica, expresada en forma de porcentaje, muestra la proporción
+                     de los ingresos mensuales que se destinan al pago del alquiler. Un menor ratio de endeudamiento 
+                     significa que un alquiler es más asequible en relación con los ingresos mensuales.
+                </p>
+            </div>
+            <div class="circle-txt">
+                <div class="circle-1">
+                    <h3>22.7 %</h3>
+                </div>
+                <p>
+                    Índice de revalorización de la zona: Este indicador, generalmente expresado en forma de porcentaje, refleja 
+                    la tasa de crecimiento histórico o proyectado del valor de las propiedades en una determinada área geográfica.
+                    Un índice más alto podría indicar un mayor potencial de valorización a largo plazo de una propiedad.
+                </p>
+            </div>
+            <div class="circle-txt">
+                <div class="circle-1">
+                    <h3>100 €</h3>
+                </div>
+                <p>
+                    Costos de mantenimiento y servicios comunitarios: Esta cifra, expresada en términos de moneda, 
+                    incluye los gastos estimados asociados con el mantenimiento regular de la propiedad, así como 
+                    las tarifas de servicios comunitarios como el agua, la electricidad, el gas, y las cuotas de 
+                    mantenimiento.
+                </p>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="general g2 container">
+
+
+    <h2>¿Qué ofrecemos?</h2>
+
+    <div class="general-content">
+
+        <div class="general-4 txt">
+            <h3>Variedad</h3>
+            <p>
+                Ofrecer una amplia variedad: casas, apartamentos, locales comerciales y garajes.
+            </p>
+        </div>
+
+        <div class="general-5 txt">
+            <h3>Personalización</h3>
+            <p>
+                Prioriza la satisfacción del cliente a través de servicios personalizados.
+            </p>
+        </div>
+
+        <div class="general-6 txt">
+            <h3>Transparencia</h3>
+            <p>
+                Tiene un enfoque transparente y profesional en todas las transacciones inmobiliarias. 
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="info-2">
+
+    <div class="info-content container">
+        <h2>Testimonios</h2>
+        <div class="testi">
+            <div class="testi-left">
+                <div class="testi-txt">
+                    <img src="images/t1.png" alt="">
+                    <h3>Ana Maria de la Cruz García</h3>
+                    <p> "RentHouse ha hecho que encontrar mi nuevo hogar sea una experiencia increíblemente fácil y 
+                        sin estrés. Su equipo mostró una profesionalidad excepcional y un conocimiento profundo del 
+                        mercado inmobiliario. Gracias a RentHouse, encontré la casa de mis sueños."
+                    </p>
+                </div>
+
+                <div class="testi-txt">
+                    <img src="images/t2.png" alt="">
+                    <h3>Pablo Cano López</h3>
+                    <p>"Quiero agradecer a RentHouse por su servicio excepcional. Su enfoque personalizado y 
+                        atención a los detalles hicieron que el proceso de alquilar fuera simple y rápido. ¡No 
+                        puedo recomendar a RentHouse lo suficiente para cualquiera que busque una experiencia 
+                        inmobiliaria sobresaliente!"
+                    </p>
+                </div>
+            </div>
+            <div class="testi-right">
+                <div class="testi-txt">
+                    <img src="images/t3.png" alt="">
+                    <h3>Aurora Martín López</h3>
+                    <p>"¡RentHouse es simplemente fenomenal! Su dedicación para encontrar la propiedad perfecta 
+                        para sus clientes es incomparable. Desde el primer contacto hasta la firma del contrato 
+                        de arrendamiento, su equipo brindó un servicio de alta calidad. Gracias, RentHouse, por 
+                        hacer que el proceso de alquiler sea tan fluido y transparente."
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer container">
+
+    <h2>Contacto</h2>
+
+    <form>
+        <input class="campo" type="text" placeholder="Nombre">
+        <input class="campo" type="email" placeholder="Email">
+        <input type="submit" class="btn-2" value="Enviar">
+    </form>
+
+    <div class="footer-txt">
+        <p>consectetur adipisicing elit.</p>
+    </div>
+</footer>
+
+{% endblock%}
